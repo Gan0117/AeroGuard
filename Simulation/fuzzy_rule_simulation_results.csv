@@ -1,0 +1,8 @@
+id,scenario,gas_dev_%FS,gas_rate_%FS/s,hum_rate_%RH/s,temp_rate_C/min,APS,band,expected,check
+S1,"Clean air, steady state",2,0.05,0.05,0.1,13.2,low,low,pass
+S2,"Steam-like: small gas rise, rapid humidity rise",8,0.3,2.0,0.3,14.3,low,low,pass
+S3,"Gas-like: rapid gas rise, stable temperature",50,4.0,0.1,0.2,85.9,high,high,pass
+S4,Heat-associated: gas response and temperature rising,40,1.5,0.1,3.5,83.7,high,high,pass
+S5,"Persistent moderate gas response, no temperature rise",25,0.1,0.1,0.2,50.0,moderate,moderate,pass
+S6,"Ethanol-mist-like: rapid gas rise, mild humidity rise",45,3.5,0.5,0.2,84.9,high,?,n/a
+S7,Steam with larger gas response (conflicting evidence),22,0.8,2.5,0.3,63.4,moderate,?,n/a
